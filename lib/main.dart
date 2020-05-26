@@ -19,7 +19,15 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Aplikasi Hellow World"),
         ), // untuk judul
-        body: Center(child: Text("Hello World")), //bagian bawah
+        body: Center(
+            child: Container(
+                color: Colors.lightBlue,
+                width: 150,
+                height: 100,
+                child: Text(
+                  "Saya sedang melatih kemampuan flutter saya",
+                  style: TextStyle(color: Colors.white, fontStyle: FontStyle.italic, fontWeight: FontWeight.w700, fontSize: 20),
+                ))), //bagian bawah
         //agar bisa textnya dibawah alt+enter -> lalu pilih wrap widget
       ),
     );
